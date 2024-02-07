@@ -1,0 +1,55 @@
+/* визначати ці кольори за допомогою шістнадцяткового коду: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.
+black:#000000;blue:#0000ff;green:#008000;red:#ff0000;white:#ffffff;yellow:#ffff00;
+*/
+/*визначати ці кольори у десятковій системі числення за допомогою функції RGB.
+black:rgb(0, 0, 0);blue:rgb(0, 0, 255);green:rgb(0, 128, 0);red:rgb(255, 0, 0);white:rgb(255, 255, 255);yellow:rgb(255, 255, 0);
+*/
+/*визначати ці кольори, використовуючи відсотки.
+black:hsl(0, 0%, 0%);blue:hsl(240, 100%, 50%);green:hsl(120, 100%, 25%);red:hsl(0, 100%, 50%);white:hsl(0, 0%, 100%);yellow:hsl(60, 100%, 50%);
+*/
+/*визначати ці кольори використовуючи альфа-канал, що задає прозорість.
+black:hwb(0 0% 100%);blue:hwb(240 0% 0%);green:hwb(120 0% 50%);red:hwb(0 0% 0%);white:hwb(0 100% 0%)yellow:hwb(60 0% 0%);
+*/
+html{
+    font-size: 100%;
+}
+body{
+    font-size: 140%;
+}
+h1{
+    font-size: 240%;
+}
+h1,h2,h3{
+    color: #808080;
+}
+#main{
+    color: #e60202;
+}
+.h2{
+    color: red;
+}
+.heading{
+    color: green;
+}
+ul>li{
+    font-weight:lighter;
+}
+section > p {
+    color: red;
+    font-size: 30px;
+}
+h1+h2{
+    color: indigo;
+}
+.first>a{
+    color: green;
+}
+p+div+p,
+p+div+p+h6+p{
+    color: salmon;
+}
+.translucent-box{
+    background-color: hsla(0,100%,50%,0.5);
+    width: 200px;
+    height: 100px;
+}
