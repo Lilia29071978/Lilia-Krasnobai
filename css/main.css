@@ -1,0 +1,19 @@
+@import url('/css/common.css');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3{
+    font-weight: 700;
+}
+h1{
+    font-size: 1.45rem;
+}
+h2{
+    font-size: 1.3rem;
+}
+.list-unstyled{
+    list-style: none;
+}
