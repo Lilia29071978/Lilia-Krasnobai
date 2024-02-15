@@ -1,0 +1,10 @@
+.negative{
+    background: linear-gradient(to left,#01052e -50%, #c1c4e2 -10%, #7b84e6 0%, #111974 100%, #efeff5 150%);
+}
+.percents{
+    background:linear-gradient(to bottom,#b7f5b4 2em,#88f595 4em,#3caf4a 8em,#159c24 16em,#085511 32em, #0d3d12 64em,#142e16 128em);
+}
+.radial{
+    background:radial-gradient(ellipse at top,rgb(213, 153, 22), rgba(255, 255, 255, 0));
+    background: radial-gradient(ellipse at bottom,rgb(243, 25, 9), rgba(255, 255, 255,0));
+}
