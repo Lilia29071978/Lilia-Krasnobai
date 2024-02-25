@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic font-size</title>
+    <style>
+    * {
+    margin: 0;
+    }
+
+    body {
+    color: #000;
+    background: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    padding: 1em;
+    font-size:clamp(16px, calc(20px + (36 - 20) * (100vw - 768px) / (1920 - 768)), 48px);
+    }
+
+    @media (min-width:768px)and(max-width:1920px){ 
+        body{
+            font-size:calc(20px + (36 - 20) * (100vw - 768px) / (1920 - 768));
+        }
+    }
+
+    @media (min-width:1920px) {
+        body{
+            font-size: 48px;
+        }
+    }
+    
+    @media(max-width:768px){
+        body{
+            font-size: 16px;
+        }
+    }
+    </style>
+</head>
+<body translate="no">
+    <p>
+    This text has a font size of 20px at viewport width of 768px and font size of 36px when viewport width is 1920px. But if the viewport width is less than 768px, the font-size won't get lower than 16px and if the viewport width is more than 1920px font size will stop scaling at 48px.
+    </p>
+
+</body>
+</html>
