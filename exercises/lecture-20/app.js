@@ -73,4 +73,25 @@ function person(name){
     }else{
       console.log('Mary не містить \'prop\'')
     }
-
+//exercise 7 
+let dirtyMartini = {
+    gin: '6 fluid ounces gin',
+    dryVermouth: '1 dash dry vermouth (0.0351951ml) ',
+    oliveBrine: '1 fluid ounce brine from olive jar',
+    olives: '4 stuffed green olives',    
+english_please() {
+    return 'ingredients:\n' +
+        `${this.gin}\n` +
+        `${this.dryVermouth}\n` +
+        `${this.oliveBrine}\n` +
+        `${this.olives}`
+}, excuse_my_french() {
+     return 'ingrédients:\n' +
+        '170.4786 ml de gin\n' +
+        '1 trait de vermouth sec (0.0351951ml)\n' +
+        '28.4131 ml de saumure du pot d\'olive \n' +
+        '4 olives vertes farcies'
+}
+}
+console.log(dirtyMartini.english_please());
+console.log(dirtyMartini.excuse_my_french());
