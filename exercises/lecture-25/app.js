@@ -52,6 +52,7 @@ header.forEach((headerText) => {
   th.style.color = 'azure';
   trHead.appendChild(th);
 });
+
 thead.appendChild(trHead);
 table.appendChild(thead);
 const tbody = document.createElement('tbody');
