@@ -48,7 +48,10 @@ names = ['Batman', 'Joker', 'Bane'];
 names.unshift('Catwoman');
 
 //exercise 10
-names = ['Batman', 'Joker', 'Bane'];
+names = [
+  'Catwoman',
+  ...names
+  ];
 let newNames=[names]
 newNames.unshift('Catwoman')
 
