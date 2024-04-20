@@ -70,9 +70,11 @@ Array.prototype.upperCase = function () {
 
 //exercise 5
 function myFunc() {
-    let arr = ['Algorithm', 'Data Structure', 'Operating System', 'html'];
-    arr.upperCase();
-    console.log(arr);
-}
-
-myFunc(); 
+  let arr = ['Algorithm', 'Data Structure', 'Operating System', 'html'];
+  arr = arr.map(function(item) {
+  return item.toUpperCase();
+  });
+  console.log(arr);
+  }
+  
+  myFunc();
