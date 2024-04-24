@@ -1,0 +1,15 @@
+.menuClass{
+    display: flex;
+    padding:0;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10rem;
+}
+.menu_items{
+    display: inline-flex;
+    margin-top: 0;
+    margin-right:10rem;
+  }
+a{
+    margin-right:10rem;
+}
