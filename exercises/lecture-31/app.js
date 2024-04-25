@@ -1,4 +1,4 @@
-const url = "https://my-json-server.typicode.com/Lilia29071978/test/posts";
+const url = "https://my-json-server.typicode.com/Lilia29071978/db/posts";
 const template = (item) => `
 <h3>${item.title}</h3>
 <div>${item.body}</div>
@@ -36,7 +36,7 @@ xhrPromise("GET", url)
     const getUserNames = uniqueUserIds.map((userId) => {
       return xhrPromise(
         "GET",
-        `https://my-json-server.typicode.com/Lilia29071978/test/users/${userId}`
+        `https://my-json-server.typicode.com/Lilia29071978/db/users/${userId}`
       ).then((userResponse) => {
         const userData = JSON.parse(userResponse);
         return userData.name;
